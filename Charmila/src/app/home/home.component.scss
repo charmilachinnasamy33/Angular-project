@@ -1,0 +1,22 @@
+/* home.component.scss */
+@use "../variables.scss" as v;
+
+.home-container {
+  color: var(--text-color);
+  background-color: var(--backgrounf-color);
+  min-height: 100vh;
+  max-height: 100vh;
+  &::after {
+    background-image: url("../../assets/image/portfolio-background.png");
+    content: "";
+    height: 100%;
+    display: block;
+    width: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    background-position-x: right;
+    background-size: contain;
+    right: 0;
+  }
+}

@@ -1,0 +1,21 @@
+$light-text-color: black;
+$light-background-color:#fff;
+
+
+
+
+
+
+
+$dark-text-color: white;
+$dark-background-color:#18181b;
+
+.light-theme {
+  --text-color: #{$light-text-color};
+  --background-color: #{$light-background-color};
+}
+
+.dark-theme {
+  --text-color: #{$dark-text-color};
+  --background-color: #{$dark-background-color};
+}
