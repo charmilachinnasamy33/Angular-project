@@ -1,5 +1,7 @@
-
-<button (click)="toggleTheme()">Theme</button>
-<div [ngClass]="isLighttheme?'light-theme':'dark-theme'">
+<button (click)="changeTheme()">
+  <i  class="fa-solid fa-sun-bright"></i>
+  <i  class="fa-duotone fa-moon"></i>
+</button>
+<div [ngClass]="isLighttheme ? 'light-theme' : 'dark-theme'">
   <app-home></app-home>
 </div>

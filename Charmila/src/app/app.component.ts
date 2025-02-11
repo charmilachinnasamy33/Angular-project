@@ -7,15 +7,15 @@ import { themes } from './app.const';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HomeComponent,CommonModule],
+  imports: [RouterOutlet, HomeComponent, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'Charmila';
   isLighttheme: boolean = true;
-  toggleTheme()
+  changeTheme()
   {
-    this.isLighttheme = !this.isLighttheme;
+    this.isLighttheme=!this.isLighttheme;
   }
 }
